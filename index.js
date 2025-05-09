@@ -52,6 +52,8 @@ mongoose
 
   app.use('/admin', adminAuthRoutes);
 
+  app.get('/', (req, res) => res.send('API is working'));
+
 // Protected Admin Route Example
 app.get('/admin/dashboard', adminAuth, (req, res) => {
   res.json({ message: 'Welcome to the Admin Dashboard' });
