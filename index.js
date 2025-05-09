@@ -5,9 +5,9 @@ const cors = require('cors');
 // Load environment variables
 require('dotenv').config();
 
-const ContactModel = require('./models/contact');
-const BranchModel = require('./models/branch');
-const EventModel = require('./models/event');
+const ContactModel = require('./models/Contact');
+const BranchModel = require('./models/Branch');
+const EventModel = require('./models/Event');
 const adminAuthRoutes = require('./routes/adminAuth');
 const adminAuth = require('./middleware/auth');
 const rootRoutes = require('./routes/root');
